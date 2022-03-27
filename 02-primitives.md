@@ -91,8 +91,10 @@ b := []byte(s) // [84 104 105 115 32 105 115 32 97 32 115 116 114 105 110 103 46
 
 ### Runes
 
-- Represent UTF-32 characters, using 32-bit integer values.
+- Represents UTF-32 characters, using 32-bit integer values.
+- `rune` is just an alias for `int32`.
 - UTF-8 is valid UTF-32, but UTF-32 does not necessarily use 32 bits per character.
+- Usually, special methods are required to process them (e.g. `strings.Reader#ReadRune`).
 - A rune can be declared using **'single quotes'**.
 
 ```go
