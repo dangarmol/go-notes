@@ -3,10 +3,10 @@
 ## Variable Declaration and Assignment
 
 ```go
-var i int      // Simply declare variable
-var i int = 42 // Declare and assign variable
-i := 42        // Infere variable type from value
-fmt.Printf("%v, %T\n", i, i)  // Print value and type
+var i int                    // Simply declare variable
+var i int = 42               // Declare and assign variable
+i := 42                      // Infer variable type from value
+fmt.Printf("%v, %T\n", i, i) // Print value and type
 ```
 
 Variables can be declared outside of functions, but then the type needs to be specified explicitly.
