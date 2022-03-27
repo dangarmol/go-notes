@@ -19,7 +19,7 @@ export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 ## Cross Compiling in Go
 
-[Link] ("https://opensource.com/article/21/1/go-cross-compiling")
+[Link to post](https://opensource.com/article/21/1/go-cross-compiling)
 
 ```bash
 #!/usr/bin/bash
