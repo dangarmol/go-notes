@@ -96,13 +96,14 @@ switch { // Empty tag also allowed
 ### Falling through
 
 - To avoid common errors, Go stops after the first statement that evaluates to `true` by default unlike other languages that require `break`, but this can be overriden with the keyword `fallthrough`.
+- Using `fallthrough` **ignores any logic tests afterwards**, the next cases will be executed regardless!
 
 ```go
 i := 10
 switch {
    case i <= 10:
       fmt.Println("Less than or equal to ten")
-      fallthrough
+      fallthrough // This ignores the logic of the next cases and executes directly !!!
    case i <= 20:
       fmt.Println("Less than or equal to twenty")
    default:
